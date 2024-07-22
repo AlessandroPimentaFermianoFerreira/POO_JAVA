@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<html>
+    <head>
+        <title>Cadastro de Veículos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="EstiloCSS/CSS2.css" rel="stylesheet" />
+    </head>
+    <body>
+        <a href="ContatoServlet?acao=lista" class="myButton1">Lista</a>
+        
+        <div class="campo1">Cadastrar de Veículo</div>
+            <form action="ContatoServlet" method="post">
+                <input type="hidden" name="acao" value="cadastra" />
+                <div class="campo">
+                    <label>Nome do Carro:</label>
+                    <input type="text" name="nome" style="width: 20em" />
+                </div>
+                <div class="campo">
+                    <label>Placa do Carro:</label>
+                    <input type="text" name="placa" style="width: 20em" />
+                </div>
+                <input type="submit" value="Salvar" class="myButton" onclick="window.alert('Cadastrado com sucesso!')"/>
+        </form>
+    </body>
+</html>
